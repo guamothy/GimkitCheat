@@ -21814,7 +21814,7 @@
 		let $showHud;
 		component_subscribe($$self, showHud, $$value => $$invalidate(0, $showHud = $$value));
 
-		keybindManager.addKeybind(new Set(["Z"]), () => {
+		keybindManager.addKeybind(new Set(["z"]), () => {
 			showHud.update(v => !v);
 		});
 
